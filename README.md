@@ -21,9 +21,17 @@ circumstances on the cards you play with the circumstances on the target tile.
 
 #### Interface:
 
-Three windows will appear when you run this game, one is the board and the
-other two are each player's hands. Cards show up in the hands, along with the
+Three windows will appear when you run this game, one is the Map and the
+other two are each player's Hands. 
+
+The Map holds the tiles to be captured.
+
+![The Map Interface](https://github.com/MrCocoNuat/welters/blob/main/assets/map.png)
+
+Cards show up in the hands, along with the
 player indicator. When it is your turn, the other player's hand is hidden.
+
+![The Hand Interaces](https://github.com/MrCocoNuat/welters/blob/main/assets/hands.png)
 
 *DO NOT CLOSE THE WINDOWS WHILE THE GAME IS IN PROGRESS* or you will be unable
 to continue playing, and the game will still be open in the background! At this
@@ -49,7 +57,19 @@ When you are satisfied with your selection, click the PLAY button to continue.
 Now you have to click a tile to capture. Clicking a tile selects it, clicking
 again will unselect it. You cannot select a tile you already own. The colored
 border indicates the grade of tile: blue/water, tan/sand, green/grass,
-gray/stone, white/metal. As the grade increases, the allowed error in casting
+gray/stone, white/metal. 
+
+![A Water Tile](https://github.com/MrCocoNuat/welters/blob/main/assets/water.png)
+
+![A Sand Tile](https://github.com/MrCocoNuat/welters/blob/main/assets/sand.png)
+
+![A Grass Tile](https://github.com/MrCocoNuat/welters/blob/main/assets/grass.png)
+
+![A Stone Tile](https://github.com/MrCocoNuat/welters/blob/main/assets/stone.png)
+
+![A Metal Tile](https://github.com/MrCocoNuat/welters/blob/main/assets/metal.png)
+
+As the grade increases, the allowed error in casting
 decreases, but the score the tile grants increases. Click CAST when you are
 satisfied.
 
@@ -70,18 +90,41 @@ job simpler. If the error value is still below the tolerance of the tile grade,
 you successfully capture the tile, and the inner triangle will change its
 color accordingly. Otherwise, the board does not change.
 
+Tolerances: 
+
+Water 54 (essentially infinite, as there is no way to get an error
+higher than that), 
+
+Sand 21, 
+
+Grass 15, 
+
+Stone 12, 
+
+Metal 9.
+
+The picture below shows an uncaptured tile, a tile captured by player 2, and a tile captured by player 1.
+![Captured Tiles](https://github.com/MrCocoNuat/welters/blob/main/assets/owning.png)
+
 Either way, your cards are now spent; draw new cards until you reach 8 again.
 When the deck reaches 0 cards left, no new cards can be drawn, so your hand
 will have less cards the following turn.
-
-Tolerances: Water 54 (essentially infinite, as there is no way to get an error
-higher than that), Sand 21, Grass 15, Stone 12, Metal 9.
 
 The game ends when the last card is used and both hands are empty. The score
 for each player is calculated by adding up the score for each tile they have
 captured; the winner has the higher score.
 
-Scores: Water 1, Sand 2, Grass 4, Stone 8, Metal 12.
+Scores:
+
+Water 1, 
+
+Sand 2, 
+
+Grass 4, 
+
+Stone 8, 
+
+Metal 12.
 
 After this, the game will automatically kill itself in 30 seconds, so you can
 safely close the windows. If you want to replay, just re-open the .jar.
