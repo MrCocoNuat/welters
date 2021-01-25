@@ -1,5 +1,7 @@
 # welters
 
+This software is no longer maintained. It was mostly a school project anyway.
+
 ### General Instructions
 
 To run this software:
